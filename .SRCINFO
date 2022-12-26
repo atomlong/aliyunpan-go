@@ -7,6 +7,10 @@ pkgbase = aliyunpan-go
 	license = Apache-2.0
 	makedepends = go
 	source = https://github.com/tickstep/aliyunpan/archive/refs/tags/v0.2.4.tar.gz
+	source = aliyunpan.env
+	source = aliyunpan@.service
 	sha256sums = 8c4339b9316a0d73fd68c03ccc1c7e4d16c6cd75249497c76853fdc0449e8855
+	sha256sums = ef96c705e57b9662928e29f0a4fdb2b17053958ff9900c6fe1646a1afbdec012
+	sha256sums = 6e9ebfea3915ccf266e992fe776594245123f8dfbfd68d482cd3768b7fbbb1d4
 
 pkgname = aliyunpan-go

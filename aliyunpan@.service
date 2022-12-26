@@ -1,0 +1,27 @@
+[Unit]
+Description=AliyunPan Sync serveice for %I
+Wants=network-online.target
+
+[Service]
+User=root
+Group=root
+Type=simple
+EnvironmentFile=/etc/default/%I
+ExecStart=/usr/bin/aliyunpan-go sync \
+	--ldir ${ALIYUN_SYNC_LDIR} \
+	--pdir ${ALIYUN_SYNC_PDIR} \
+	--mode ${ALIYUN_SYNC_MODE} \
+	--pri  ${ALIYUN_SYNC_PRI}  \
+	--dp   ${ALIYUN_SYNC_DP}   \
+	--up   ${ALIYUN_SYNC_UP}   \
+	--dbs  ${ALIYUN_SYNC_DBS}  \
+	--ubs  ${ALIYUN_SYNC_UBS}  \
+	--log  ${ALIYUN_SYNC_LOG}  \
+	--ldt  ${ALIYUN_SYNC_LDT}  \
+	--step ${ALIYUN_SYNC_STEP}
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
