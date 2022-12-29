@@ -7,7 +7,7 @@ User=root
 Group=root
 Type=simple
 EnvironmentFile=/etc/default/%I
-ExecStart=/usr/bin/aliyunpan-go sync \
+ExecStart=/usr/bin/aliyunpan-go sync start \
 	--ldir ${ALIYUN_SYNC_LDIR} \
 	--pdir ${ALIYUN_SYNC_PDIR} \
 	--mode ${ALIYUN_SYNC_MODE} \

@@ -11,7 +11,7 @@ source=("https://github.com/tickstep/aliyunpan/archive/refs/tags/v$pkgver.tar.gz
 		aliyunpan@.service)
 sha256sums=('8c4339b9316a0d73fd68c03ccc1c7e4d16c6cd75249497c76853fdc0449e8855'
             'ef96c705e57b9662928e29f0a4fdb2b17053958ff9900c6fe1646a1afbdec012'
-			'6e9ebfea3915ccf266e992fe776594245123f8dfbfd68d482cd3768b7fbbb1d4')
+			'13230d2997ccd100be59358f79f4692f5e7a975abcdd9e186de31dbd3850c28a')
 
 build() {
   cd "$srcdir/aliyunpan-$pkgver"
